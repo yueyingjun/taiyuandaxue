@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width:96px;height: 48px;
+            border:2px solid #000;
+            border-bottom: 50px solid #000;
+            position: absolute;
+            left:0;top:0;right:0;bottom: 0;
+            margin: auto;
+            border-radius: 50%;
+            transition: all 2s ease;
+        }
+        div:hover{
+            transform: rotate(90deg);
+        }
+        div:before{
+            content: "";
+            position: absolute;
+            width:8px;height:8px;
+            border: 20px solid #000;
+            border-radius: 50%;
+            left:0;top:50%;
+            background: #fff;
+        }
+        div:after{
+            content: "";
+            position: absolute;
+            width:8px;height:8px;
+            border: 20px solid #fff;
+            border-radius: 50%;
+            right:0;top:50%;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+
+html承载的是内容
+<img src="http://pic.qiantucdn.com/58pic/get2/959458PIC.jpg" alt="">
+<a href="http://baidu.com">百度</a>
+<ul>
+    <li>1111</li>
+    <li>1111</li>
+    <li>1111</li>
+    <li>1111</li>
+    <li>1111</li>
+</ul>
+<ol>
+    <li>aaaaa</li>
+    <li>aaaaa</li>
+    <li>aaaaa</li>
+    <li>aaaaa</li>
+</ol>
+
+<table>
+    <tr>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>性别</th>
+    </tr>
+    <tr>
+        <td>张三</td>
+        <td>12</td>
+        <td>男</td>
+    </tr>
+</table>
+<div>
+
+</div>
+</body>
+</html>

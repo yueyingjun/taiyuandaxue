@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+      .box1{
+          width:96px;height:48px;
+          border:2px solid  #000;
+          border-bottom: 50px solid #000;
+          position: absolute;
+          left:0;top:0;right:0;bottom: 0;margin: auto;
+          border-radius: 50%;
+          transition: transform 2s ;
+
+
+      }
+
+        .box1:before{
+            content: "";
+            width:8px;height:8px;
+            border:20px solid #000;
+            background: #fff;
+            position: absolute;
+            left:0;top:50%;
+            border-radius: 50%;
+        }
+      .box1:after{
+          content: "";
+          width:8px;height:8px;
+          border:20px solid #fff;
+          background: #000;
+          position: absolute;
+          right:0;top:50%;
+          border-radius: 50%;
+      }
+
+        .box2{
+            width:200px;height:200px;
+            border:1px solid #000;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+        .one{
+            width:0;height:0px;
+            border-top:100px solid pink;
+            border-left:100px solid rgba(0,0,0,0);
+            border-right:100px solid rgba(0,0,0,0);
+            border-radius: 50%;
+            position: absolute;
+        }
+      .two{
+          width:0;height:0px;
+          border-right:100px solid blue;
+          border-top:100px solid rgba(0,0,0,0);
+          border-bottom:100px solid rgba(0,0,0,0);
+          border-radius: 50%;
+          position: absolute;
+          transform: translate(100px,0);
+      }
+      .three{
+          width:0;height:0px;
+          border-bottom:100px solid green;
+          border-left:100px solid rgba(0,0,0,0);
+          border-right:100px solid rgba(0,0,0,0);
+          border-radius: 50%;
+          position: absolute;
+          transform: translate(0,100px);
+      }
+      .four{
+          width:0;height:0px;
+          border-left:100px solid red;
+          border-top:100px solid rgba(0,0,0,0);
+          border-bottom:100px solid rgba(0,0,0,0);
+          border-radius: 50%;
+          position: absolute;
+
+      }
+    </style>
+    <script>
+
+        window.onload=function (ev) {
+            var div=document.querySelector("div");
+            div.onmouseover=function (ev2) {
+                div.style.transform="rotate(90deg)";
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="box1"></div>
+
+<div class="box2">
+ <div class="one"></div>
+ <div class="two"></div>
+ <div class="three"></div>
+ <div class="four"></div>
+</div>
+
+</body>
+</html>
