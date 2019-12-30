@@ -42,7 +42,12 @@ window.onload=function (ev) {
 
     var  audio=new AudioContext();
     var ao;
+    var flag=true;
     document.onkeydown=function (e) {
+        if(!flag){
+            return;
+        }
+        flag=false;
         ao=audio.createOscillator();
         var as=audio.createAnalyser();
         var gain=audio.createGain();
@@ -54,6 +59,7 @@ window.onload=function (ev) {
         keys[hash[e.keyCode].div].style.boxShadow="0 0 20px #000 inset"
     }
     document.onkeyup=function (e) {
+        flag=true;
         ao.stop(audio.currentTime);
         keys[hash[e.keyCode].div].style.boxShadow="none"
     }
