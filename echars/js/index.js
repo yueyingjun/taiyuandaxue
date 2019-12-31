@@ -218,7 +218,7 @@ function jidu() {
    $.ajax({
       url:"http://123.56.160.241/index.php/index/index/getSeasonData",
        success:function (e) {
-           console.log(e.data);
+
            var datas=[];
 
            var obj={};
@@ -319,7 +319,6 @@ function loudou() {
                     value:obj.pvs
                 }
             })
-            console.log(datas);
 
             var colors=['#f36119','#ff9921','#20c8ff','#2cb7ff','#1785ef'];
             var url='https://q.cnblogs.com/Images/qdigg.gif';
@@ -327,7 +326,7 @@ function loudou() {
 
                 grid: {
                     top: 100,
-                    "bottom":10,
+                    "bottom":0,
                     "left":60
                     },
 
@@ -377,6 +376,80 @@ function loudou() {
         }
     })
 }
+
+
+
+map()
+function map() {
+    $.ajax({
+        url: "http://123.56.160.241/index.php/index/index/getAreaData",
+        success: function (res) {
+            if (res.code === 200) {
+                var data=res.data;
+                var mapData=data.map(function (v) {
+                    return {
+                        name: v.province,
+                        value: [v.longitude, v.latitude, v.pvs]
+                    }
+                });
+                var option={
+                    tooltip: {
+                        trigger: 'item',
+                        //提示框位置
+                        position: function (point) {
+                            return [point[0] + 30, point[1] - 30];
+                        },
+                        //提示框内容格式
+                        formatter: function (params) {
+                            return params.data.name + "<br>访问量： " + params.data.value[2]
+                        },
+                        backgroundColor: "rgba(63, 236, 255, 0.25)",
+                        borderColor: "#3cd3fb",
+                        borderWidth: "1"
+                    },
+                    geo: {
+                        map: 'china',
+                        layoutCenter: ['50%', '50%'],
+                        layoutSize: 450, //尺寸
+                        itemStyle: {
+                            normal: {
+                                areaColor: '#4294cb',
+                                borderColor: '#111'
+                            },
+                            emphasis: {
+                                areaColor: '#46f0ff'
+                            }
+                        }
+                    },
+                    series: [
+                        {
+                            type: 'effectScatter',
+                            coordinateSystem: 'geo',
+                            rippleEffect: { //涟漪特效
+                                period: 4, //动画时间，值越小速度越快
+                                brushType: 'fill', //波纹绘制方式 stroke, fill
+                                scale: 3 //波纹圆环最大限制，值越大波纹越大
+                            },
+                            data: mapData,
+                            symbol: 'circle',
+                            symbolSize: function (val) {
+                                return val[2]/800;
+                            },
+                            itemStyle: {
+                                normal: {
+                                    color: '#fff',
+                                }
+                            }
+                        }
+                    ]
+                };
+                var mapChart=echarts.init($('.center-middle')[0]);
+                mapChart.setOption(option);
+            }
+        }
+    });
+}
+
 
 //设置日历
 laydate.render({
