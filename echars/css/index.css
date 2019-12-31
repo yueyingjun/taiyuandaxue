@@ -10,19 +10,7 @@ body {
     display: flex;
     box-sizing: border-box;
 }
-/*左边
-
-软件工程
-
-   瀑布流
-   螺旋模型
-   组件化开发
-   智能化开发
-   github
-
-   git
-
-*/
+/*左边*/
 .left {
     width: 30%;
     height: 100%;
@@ -111,11 +99,58 @@ body {
 .center {
     width: 35%;
     height: 100%;
-    background: blue;
 }
+.center-top{
+    width:100%;
+    height:10%;
+
+}
+.center-middle{
+    width:100%;
+    height:43%;
+}
+.center-bottom{
+    margin-top: 4%;
+    width:100%;
+    height:43%;
+    background: url("../images/border-short.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.center-bottom-title{
+    color:#fff;
+    position: relative;
+    top:10px;
+    left:10px;
+}
+.center-bottom-box{
+    width:100%;height:80%;
+}
+
+
 /*右边*/
 .right {
     width: 30%;
     height: 100%;
-    background: green;
+
+}
+
+.right-top{
+    width:100%;
+    height:10%;
+
+}
+.right-middle{
+    width:100%;
+    height:43%;
+    background: url("../images/border-short.png") no-repeat;
+    background-size: 100% 100%;
+    color:#fff;
+}
+.right-bottom{
+    margin-top: 4%;
+    width:100%;
+    height:43%;
+    background: url("../images/border-short.png") no-repeat;
+    background-size: 100% 100%;
 }

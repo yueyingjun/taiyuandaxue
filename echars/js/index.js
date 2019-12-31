@@ -1,5 +1,4 @@
 hours()
-
 //处理小时
 function hours(month,day) {
 
@@ -139,14 +138,12 @@ function hours(month,day) {
 
 
 //处理天
-
 days()
 function days(month) {
    var month= month?month:1
    $.ajax({
        url:"http://123.56.160.241/index.php/index/index/getDailyData?month="+month,
        success:function (e) {
-           console.log(e.data);
            var datax=[];
            var datay=[];
            for(var i=0;i<e.data.length;i++){
@@ -214,6 +211,82 @@ function days(month) {
        }
    })
 }
+
+//处理季度
+jidu()
+function jidu() {
+   $.ajax({
+      url:"http://123.56.160.241/index.php/index/index/getSeasonData",
+       success:function (e) {
+           console.log(e.data);
+           var datas=[];
+
+           var obj={};
+           obj.name="第一季度";
+           obj.value=parseInt(e.data[0].pvs)+ parseInt(e.data[1].pvs)+ parseInt(e.data[2].pvs)
+           datas.push(obj);
+
+           var obj={};
+           obj.name="第二季度";
+           obj.value=parseInt(e.data[3].pvs)+ parseInt(e.data[4].pvs)+ parseInt(e.data[5].pvs)
+           datas.push(obj);
+
+           var obj={};
+           obj.name="第三季度";
+           obj.value=parseInt(e.data[6].pvs)+ parseInt(e.data[7].pvs)+ parseInt(e.data[8].pvs)
+           datas.push(obj);
+
+           var obj={};
+           obj.name="第四季度";
+           obj.value=parseInt(e.data[9].pvs)+ parseInt(e.data[10].pvs)+ parseInt(e.data[11].pvs)
+           datas.push(obj);
+
+
+           var option = {
+               tooltip: {
+                   trigger: 'item',
+                   formatter: "{a} <br/>{b}: {c} ({d}%)"
+               },
+               color: ["#3fecff", "#4c63f2", "#95aaff", "#ffac6d"],
+               series: [
+                   {
+                       name:'访问来源',
+                       type:'pie',
+                       radius: ['50%', '70%'],
+                       center: ['50%', '50%'],
+                       avoidLabelOverlap: true,
+                       label: {
+                           normal: {
+                               show: false,
+                               position: 'center'
+                           },
+                           emphasis: {
+                               show: true,
+                               textStyle: {
+                                   fontSize: '30',
+                                   fontWeight: 'bold'
+                               }
+                           }
+                       },
+                       labelLine: {
+                           normal: {
+                               show: false
+                           }
+                       },
+                       data:datas
+                   }
+               ]
+           };
+
+
+           var myChart = echarts.init(document.querySelector(".center-bottom-box"));
+           myChart.setOption(option);
+
+
+       }
+   })
+}
+
 //设置日历
 laydate.render({
     elem: '#day', //指定元素
