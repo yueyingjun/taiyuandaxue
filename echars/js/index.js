@@ -1,5 +1,6 @@
 hours()
 
+//处理小时
 function hours(month,day) {
 
     var month=month?month:1;
@@ -137,6 +138,83 @@ function hours(month,day) {
 }
 
 
+//处理天
+
+days()
+function days(month) {
+   var month= month?month:1
+   $.ajax({
+       url:"http://123.56.160.241/index.php/index/index/getDailyData?month="+month,
+       success:function (e) {
+           console.log(e.data);
+           var datax=[];
+           var datay=[];
+           for(var i=0;i<e.data.length;i++){
+               datax.push(e.data[i].day)
+               datay.push(e.data[i].pvs)
+           }
+
+           var option = {
+               xAxis: {
+                   type: 'category',
+                   boundaryGap: false,
+                   data: datax,
+                   axisLabel: {
+                       inside: false,
+                       textStyle: {
+                           color: '#aaa'
+                       }
+                   },
+               },
+               yAxis: {
+                   type: 'value',
+                   axisLabel: {
+                       inside: false,
+                       textStyle: {
+                           color: '#aaa'
+                       }
+                   },
+                   splitLine: {
+                       lineStyle: {
+                           // 使用深浅的间隔色
+                           color: '#333'
+                       }
+                   }
+               },
+               series: [{
+                   data: datay,
+                   type: 'line',
+                   lineStyle:{
+                       color:"orange"
+                   },
+                   areaStyle: {
+                       color: {
+                           type: 'linear',
+                           x: 0,
+                           y: 0,
+                           x2: 0,
+                           y2: 1,
+                           colorStops: [{
+                               offset: 0, color: '#ccc' // 0% 处的颜色
+                           }, {
+                               offset: 1, color: '#000' // 100% 处的颜色
+                           }],
+                           global: false // 缺省为 false
+                       }
+
+                   }
+               }]
+           };
+
+           var myChart = echarts.init(document.querySelector(".left-bottom-box"));
+           myChart.setOption(option);
+
+
+
+       }
+   })
+}
+//设置日历
 laydate.render({
     elem: '#day', //指定元素
     value: '2018-01-01',
@@ -144,5 +222,18 @@ laydate.render({
     max: '2018-12-31',
     done: function (value, date) {
         hours(date.month, date.date);
+    }
+});
+
+//设置月历
+laydate.render({
+    elem: '#month', //指定元素
+    value: '2018-01',
+    type: 'month',
+    format: "yyyy-MM",
+    min: "2018-01-01",
+    max: '2018-12-31',
+    done: function (value, date) {
+       days(date.month);
     }
 });
