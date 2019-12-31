@@ -1,13 +1,7 @@
 window.onload=function (ev) {
 
     /*
-    * 49   1
-    * 50  2
-    *
-    *
-    *
-    * 56    8
-    *
+    * 49
     * */
 
     var hash={

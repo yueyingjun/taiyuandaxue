@@ -5,6 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05f14517-5cba-42a3-829c-4fe899c0259c" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/images/border-long.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/images/border-short.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/images/icon-back.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/images/icon-rili.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/images/icon-search.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/images/icon-user.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/images/icon-weather.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/images/left-side.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/images/right-side.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/images/title.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/js/china.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/js/echarts.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/js/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/laydate/laydate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/laydate/theme/default/font/iconfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/laydate/theme/default/font/iconfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/laydate/theme/default/font/iconfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/laydate/theme/default/font/iconfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/echars/laydate/theme/default/laydate.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/gangqin.js" afterPath="$PROJECT_DIR$/gangqin.js" />
     </list>
@@ -17,32 +36,83 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gangqin.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gangqin.html">
+      <file leaf-file-name="icon-rili.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/echars/images/icon-rili.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icon-search.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/echars/images/icon-search.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icon-user.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/echars/images/icon-user.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icon-weather.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/echars/images/icon-weather.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="left-side.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/echars/images/left-side.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="right-side.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/echars/images/right-side.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="title.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/echars/images/title.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="china.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/echars/js/china.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+            <state relative-caret-position="-11692">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gangqin.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gangqin.js">
+      <file leaf-file-name="echarts.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/echars/js/echarts.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="61" column="18" lean-forward="false" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+            <state relative-caret-position="-295626">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gangqi.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gangqi.css">
+      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/echars/js/jquery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,6 +191,11 @@
               <item name="taida" type="b2602c69:ProjectViewProjectNode" />
               <item name="taida" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="taida" type="b2602c69:ProjectViewProjectNode" />
+              <item name="taida" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="echars" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -165,16 +240,15 @@
       <updated>1577670258700</updated>
       <workItem from="1577670261403" duration="10654000" />
       <workItem from="1577693718536" duration="25000" />
-      <workItem from="1577693765867" duration="3636000" />
+      <workItem from="1577693765867" duration="4467000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14315000" />
+    <option name="totallyTimeSpent" value="15146000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -183,7 +257,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15508886" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15508886" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -274,9 +348,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gangqin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="61" column="18" lean-forward="false" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+        <state relative-caret-position="107">
+          <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echars/images/border-long.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echars/images/icon-back.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echars/images/border-short.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echars/images/icon-rili.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echars/images/icon-search.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echars/images/icon-user.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echars/images/icon-weather.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echars/images/left-side.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echars/images/right-side.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echars/images/title.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echars/js/china.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11692">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echars/js/echarts.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-295626">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/echars/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
