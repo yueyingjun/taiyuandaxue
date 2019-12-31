@@ -243,34 +243,48 @@ function jidu() {
 
 
            var option = {
-               tooltip: {
-                   trigger: 'item',
-                   formatter: "{a} <br/>{b}: {c} ({d}%)"
-               },
+
                color: ["#3fecff", "#4c63f2", "#95aaff", "#ffac6d"],
                series: [
                    {
                        name:'访问来源',
                        type:'pie',
-                       radius: ['50%', '70%'],
-                       center: ['50%', '50%'],
+                       radius: ['40%', '60%'],
                        avoidLabelOverlap: true,
                        label: {
                            normal: {
-                               show: false,
-                               position: 'center'
-                           },
-                           emphasis: {
-                               show: true,
-                               textStyle: {
-                                   fontSize: '30',
-                                   fontWeight: 'bold'
+                               formatter: '{b|{b}}\n{c|{c}}  {d|{d}%}',
+                               padding: [0, -110],
+                               rich: {
+                                   b: {
+                                       fontSize: 16,
+                                       color: '#fff',
+                                       align: 'left',
+                                       verticalAlign: "top",
+                                       lineHeight: 30
+                                   },
+                                   c: {
+                                       fontSize: 18,
+                                       align: 'left',
+                                       color: 'red'
+                                   },
+                                   d: {
+                                       fontSize: 18,
+                                       align: 'left',
+                                       color: 'red'
+                                   }
                                }
                            }
                        },
                        labelLine: {
                            normal: {
-                               show: false
+                               show: true,
+                               length: 30,
+                               length2: 100,
+                               lineStyle: {
+                                   color: '#28b1c7',
+                                   width: 2
+                               }
                            }
                        },
                        data:datas
@@ -285,6 +299,83 @@ function jidu() {
 
        }
    })
+}
+
+
+
+loudou()
+function loudou() {
+
+    $.ajax({
+        url:"http://123.56.160.241/index.php/index/index/getStepData",
+        success:function (e) {
+            var datas=e.data;
+            datas=datas.sort(function (a,b) {
+                return a.sort-b.sort
+            })
+            datas=datas.map(function (obj) {
+                return {
+                    name:obj.step,
+                    value:obj.pvs
+                }
+            })
+            console.log(datas);
+
+            var colors=['#f36119','#ff9921','#20c8ff','#2cb7ff','#1785ef'];
+            var url='https://q.cnblogs.com/Images/qdigg.gif';
+            option = {
+
+                grid: {
+                    top: 100,
+                    "bottom":10,
+                    "left":60
+                    },
+
+                series: [
+                    {
+                        type: 'funnel',
+                        left: '15%',
+                        width: '20%',
+                        gap: 16,
+                        minSize: 60,
+                        maxSize: 100,
+                        label: {
+                            normal: {
+                                formatter: '{b|{b}}\n{c|{c}}  {d|{d}%}',
+                                padding: [0, 30],
+                                rich: {
+                                    b: {
+                                        fontSize: 16,
+                                        color: '#fff',
+                                        align: 'left',
+                                        verticalAlign: "top",
+                                        lineHeight: 30
+                                    },
+                                    c: {
+                                        fontSize: 18,
+                                        align: 'left',
+                                        color: 'red'
+                                    },
+                                    d: {
+                                        fontSize: 18,
+                                        align: 'left',
+                                        color: 'red'
+                                    }
+                                }
+                            }
+                        },
+                        data: datas
+                    },
+
+                ]
+            };
+
+
+            var myChart = echarts.init(document.querySelector(".right-middle"));
+            myChart.setOption(option);
+
+        }
+    })
 }
 
 //设置日历
